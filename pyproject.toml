@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["__stan__ <8445726+schanjr@users.noreply.github.com>"]
 readme = "README.md"
-packages = [{include = "sg_housing"}]
+#packages = [{include = "sg_housing"}]
 
 [tool.poetry.dependencies]
 python = "^3.9.10"
