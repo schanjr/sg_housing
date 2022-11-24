@@ -14,7 +14,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+sg_housing/lib/
 lib64/
 parts/
 sdist/
@@ -130,5 +130,5 @@ dmypy.json
 
 .idea
 /HDB_Resale_Prices/
-/.streamlit/
+/sg_housing/.streamlit/
 .DS_Store
