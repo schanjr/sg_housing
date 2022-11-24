@@ -5,11 +5,7 @@ description = ""
 authors = ["__stan__ <8445726+schanjr@users.noreply.github.com>"]
 readme = "README.md"
 #packages = [{include = "sg_housing"}]
-packages = [
-    { include = "lib" },
-    { include = "pages" },
-    { include = "resale-flat-prices" }
-]
+include = ["lib","pages","resale-flat-prices"]
 
 [tool.poetry.dependencies]
 python = "^3.9.10"
@@ -21,7 +17,6 @@ pydeck = "^0.7.1"
 asyncio = "^3.4.3"
 aiohttp = "^3.8.3"
 nest-asyncio = "^1.5.6"
-calc = "^1.0"
 
 
 [build-system]
