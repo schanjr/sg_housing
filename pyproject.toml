@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "sg_housing"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.9.10"
 streamlit = "^1.13.0"
 watchdog = "^2.1.9"
 jupyter = "^1.0.0"
