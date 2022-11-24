@@ -5,7 +5,7 @@ description = ""
 authors = ["__stan__ <8445726+schanjr@users.noreply.github.com>"]
 readme = "README.md"
 #packages = [{include = "sg_housing"}]
-include = ["lib","pages","resale-flat-prices"]
+include = ["lib/*","pages/*","resale-flat-prices/*"]
 
 [tool.poetry.dependencies]
 python = "^3.9.10"
