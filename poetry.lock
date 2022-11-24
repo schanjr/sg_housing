@@ -204,6 +204,14 @@ optional = false
 python-versions = "~=3.7"
 
 [[package]]
+name = "calc"
+version = "1.0"
+description = "A simple module with the basic functions of a calculator and the calculator itself."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "certifi"
 version = "2022.9.24"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -1486,7 +1494,7 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9.10"
-content-hash = "eabaaed4591c64bd91e866d1edf6822228cb3c3a065e46e8087b662317e52b6c"
+content-hash = "295c36250284e78e76898a52f32de5d89a918ff300e1feb55a0be42d9285a867"
 
 [metadata.files]
 aiohttp = [
@@ -1658,6 +1666,9 @@ blinker = [
 cachetools = [
     {file = "cachetools-5.2.0-py3-none-any.whl", hash = "sha256:f9f17d2aec496a9aa6b76f53e3b614c965223c061982d434d160f930c698a9db"},
     {file = "cachetools-5.2.0.tar.gz", hash = "sha256:6a94c6402995a99c3970cc7e4884bb60b4a8639938157eeed436098bf9831757"},
+]
+calc = [
+    {file = "calc-1.0.zip", hash = "sha256:a04b54a0b894792e27e1a2d82b629d0d3da3dcc36e064d49746063b99cc653d2"},
 ]
 certifi = [
     {file = "certifi-2022.9.24-py3-none-any.whl", hash = "sha256:90c1a32f1d68f940488354e36370f6cca89f0f106db09518524c88d6ed83f382"},
