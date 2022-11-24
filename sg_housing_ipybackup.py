@@ -1,7 +1,7 @@
 import pandas as pd
 import altair as alt
 
-df = pd.read_csv('sg_housing/resale-flat-prices/2017-and-beyond-annotated.csv')
+df = pd.read_csv('resale-flat-prices/2017-and-beyond-annotated.csv')
 # # Cell for getting coordinates, don't need to run this usually.
 # import pandas as pd
 # import lib.map_utils as mp

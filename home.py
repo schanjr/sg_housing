@@ -3,9 +3,9 @@ import pydeck as pdk
 import streamlit as st
 
 # import altair as alt
-import sg_housing.lib.calculations as calc
+import lib.calculations as calc
 
-df = pd.read_csv('./resale-flat-prices/2017-and-beyond-annotated.csv')
+df = pd.read_csv('resale-flat-prices/2017-and-beyond-annotated.csv')
 df['month'] = pd.to_datetime(df.month)
 
 @st.cache
