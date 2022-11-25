@@ -4,7 +4,7 @@ import streamlit as st
 
 # import altair as alt
 # import tools.calculations as calc
-from tools.calculations import sqm_to_sqft
+from tools import calculations as calc
 
 df = pd.read_csv('resale-flat-prices/2017-and-beyond-annotated.csv')
 df['month'] = pd.to_datetime(df.month)
@@ -33,7 +33,7 @@ with st.sidebar:
                                                          key='resale_price_slider', step=10000)
         df = df[df['resale_price'].between(resale_slider_min, resale_slider_max)]
         # Sqr feet filters
-        df['sqr_ft'] = df['floor_area_sqm'].apply(sqm_to_sqft)
+        df['sqr_ft'] = df['floor_area_sqm'].apply(calc.sqm_to_sqft)
         sqr_ft_min, sqr_ft_max = int(df.sqr_ft.min()), int(df.sqr_ft.max())
         sqr_ft_slider_min, sqr_ft_slider_max = st.slider('Square Feet', min_value=sqr_ft_min, max_value=sqr_ft_max,
                                                          value=(sqr_ft_min, sqr_ft_max), format="%d sqr/ft",
