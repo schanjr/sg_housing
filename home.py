@@ -3,8 +3,8 @@ import pydeck as pdk
 import streamlit as st
 
 # import altair as alt
-# import lib.calculations as calc
-from lib.calculations import sqm_to_sqft
+# import tools.calculations as calc
+from tools.calculations import sqm_to_sqft
 
 df = pd.read_csv('resale-flat-prices/2017-and-beyond-annotated.csv')
 df['month'] = pd.to_datetime(df.month)
@@ -91,3 +91,7 @@ st.components.v1.html(deck.to_html(as_string=True), height=1000, width=1200)
 # st.pydeck_chart(deck)
 
 st.write(df.sample(n=50))
+
+if __name__ == "__main__":
+    import sys
+    sys.path.insert(0, '..')
