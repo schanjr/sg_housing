@@ -5,7 +5,7 @@ description = ""
 authors = ["__stan__ <8445726+schanjr@users.noreply.github.com>"]
 readme = "README.md"
 packages = [
-    { include = "tools", from = "./tools" },
+    { include = "tools", from = "./tools" }
 ]
 include = ["resale-flat-prices/2017-and-beyond-annotated.csv"]
 
