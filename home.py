@@ -1,14 +1,17 @@
+import os
+import sys
+current_path = os.getcwd()
+sys.path.append(os.path.join(current_path, "tools"))
+print(sys.path)
+
 import pandas as pd
 import pydeck as pdk
 import streamlit as st
 from tools import calculations as calc
 
-import os
-import sys
 
-current_path = os.getcwd()
-sys.path.append(os.path.join(current_path, "tools"))
-print(sys.path)
+
+
 
 st.set_page_config(layout="wide")
 
