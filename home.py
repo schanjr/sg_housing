@@ -1,13 +1,19 @@
 import pandas as pd
 import pydeck as pdk
 import streamlit as st
-
-# import altair as alt
-# import tools.calculations as calc
 from tools import calculations as calc
+
+import os
+import sys
+
+current_path = os.getcwd()
+sys.path.append(os.path.join(current_path, "tools"))
+
+st.set_page_config(layout="wide")
 
 df = pd.read_csv('resale-flat-prices/2017-and-beyond-annotated.csv')
 df['month'] = pd.to_datetime(df.month)
+
 
 @st.cache
 def flat_types():
@@ -47,7 +53,6 @@ with st.sidebar:
         # Towns filters
         selected_town = st.multiselect('Town', towns(), towns())
         df = df[df.town.isin(selected_town)]
-
 st.write("Rows: {}".format(df.size))
 
 # chart = alt.Chart(df) \
@@ -87,10 +92,10 @@ deck = pdk.Deck(
     map_provider='mapbox',
     map_style='mapbox://styles/schanjr/cla4gffe3001l14o4ql60p13j',
     layers=[layer], initial_view_state=view_state)
-st.components.v1.html(deck.to_html(as_string=True), height=1000, width=1200)
+st.components.v1.html(deck.to_html(as_string=True), height=1000)  # , height=1000, width=1200)
 # st.pydeck_chart(deck)
 
-st.write(df.sample(n=50))
+st.write(df.sample(n=20, replace=True))
 
 if __name__ == "__main__":
     import sys

@@ -1252,7 +1252,7 @@ tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
 
 [[package]]
 name = "streamlit"
-version = "1.15.1"
+version = "1.16.0"
 description = "The fastest way to build data apps in Python"
 category = "main"
 optional = false
@@ -1283,6 +1283,9 @@ typing-extensions = ">=3.10.0.0"
 tzlocal = ">=1.1"
 validators = ">=0.2"
 watchdog = {version = "*", markers = "platform_system != \"Darwin\""}
+
+[package.extras]
+snowflake = ["snowflake-snowpark-python"]
 
 [[package]]
 name = "terminado"
@@ -2507,8 +2510,8 @@ stack-data = [
     {file = "stack_data-0.6.1.tar.gz", hash = "sha256:6c9a10eb5f342415fe085db551d673955611afb821551f554d91772415464315"},
 ]
 streamlit = [
-    {file = "streamlit-1.15.1-py2.py3-none-any.whl", hash = "sha256:ac8b24fa26dd5dfcd1954a340315c0b36c868c7de688259099dfd909524f1d8d"},
-    {file = "streamlit-1.15.1.tar.gz", hash = "sha256:2ec65c29b6390ff5d8288dac20fa3a4a343ac8f0755de3dc922b468a4d6ea6cc"},
+    {file = "streamlit-1.16.0-py2.py3-none-any.whl", hash = "sha256:4c135621ede6eb8e9d6e738cc5496d90d66bdb78340eab1eb2dbf1978cc7af80"},
+    {file = "streamlit-1.16.0.tar.gz", hash = "sha256:11f98f9c854f61145e78109d2d0694354122136230397a2b8fdc7d6778883c60"},
 ]
 terminado = [
     {file = "terminado-0.17.0-py3-none-any.whl", hash = "sha256:bf6fe52accd06d0661d7611cc73202121ec6ee51e46d8185d489ac074ca457c2"},
