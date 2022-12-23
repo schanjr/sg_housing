@@ -1,7 +1,7 @@
 import pandas as pd
 import pydeck as pdk
 import streamlit as st
-from src.lib import calculations as calc
+from lib import calculations as calc
 
 
 st.set_page_config(layout="wide")
