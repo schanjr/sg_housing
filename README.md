@@ -1,7 +1,11 @@
-# Run
-`poetry run streamlit run sg_housing/__init__.py`
+# install 
+- install [poetry](https://python-poetry.org/docs/)
+- install dependencies `poetry install`
 
-# Refs: 
+# run
+`poetry run streamlit run home.py`
+
+# references:
 https://github.com/teyang-lau/HDB_Resale_Prices
 
 Mapbox:

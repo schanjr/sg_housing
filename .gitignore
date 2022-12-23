@@ -130,5 +130,6 @@ dmypy.json
 
 .idea
 /HDB_Resale_Prices/
-/.streamlit/
 .DS_Store
+/ipynb/
+/ipynb/**
