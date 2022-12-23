@@ -8,6 +8,7 @@ import sys
 
 current_path = os.getcwd()
 sys.path.append(os.path.join(current_path, "tools"))
+print(sys.path)
 
 st.set_page_config(layout="wide")
 
